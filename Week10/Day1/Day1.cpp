@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <fstream>
+#include <string>
+
 
 //void swap(int x, int y); //形式函数声明
 //void swap1(int* x, int* y); //指针函数声明
@@ -71,8 +73,23 @@ int main()
 	//ChangeArray(Arr);
 	//cout << "size" << size(Arr);
 
+	//cout << "a" << a << endl;
+	//cout << "b" << b << endl;
+	//swap2(a, b); //调用的时候影响实参
+	//cout << "a" << a << endl;
+	//cout << "b" << b << endl;
 
+	/*参数的默认值*/
+	/*int a3 = 100;
+	int b3 = 200;
+	int result;
 
+	result = sum(a, b);
+	cout << "sum" << result;
+	cout << "打印数组" << endl;
+	int Arr[]{ 1,2 ,3,4 };
+	ChangeArray(Arr);
+	cout << "size" << size(Arr);*/
 
 
 
@@ -111,19 +128,17 @@ int main()
 		char data[100];
 		ifstream ReadFile;
 		ReadFile.open("test.txt");
-		if (ReadFile.is_open()) {
-			while (!ReadFile.eof()) {
-				ReadFile.getline(data, 100);
-				cout << data << endl;
-			}
+		//if (ReadFile.is_open()) {
+		//	while (!ReadFile.eof()) {
+		//		ReadFile.getline(data, 100);
+		//		cout << data << endl;
+		//	}
 
-			ReadFile.close();
-		}
-		else {
-			cout << "无法打开文件" << endl;
-		}
-		system("pause");
-		return 0;
+		//else {
+		//	cout << "无法打开文件" << endl;
+		//}
+		//system("pause");
+		//return 0;
 
 	}
 	catch (const std::exception& e)
@@ -134,14 +149,20 @@ int main()
 		system("pause");
 	}
 
-
+}
 #pragma endregion
 
 
 
 
 
-}
+//void swap(int x, int y) {
+//	int temp;
+//	temp = x;
+//	x = y;
+//	y = temp;
+
+//}
 //void swap(int x, int y) {
 //	int temp;
 //	temp = x;

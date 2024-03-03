@@ -2,7 +2,11 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+<<<<<<< HEAD
       <FullPath>E:\C++\C-Study\Week10\x64\Debug\Day1.exe</FullPath>
+=======
+      <FullPath>G:\UnrealProject\2024-2\Week10\x64\Debug\Day1.exe</FullPath>
+>>>>>>> 157b1698894fee0cc17252b8f03df4c47be70cd1
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

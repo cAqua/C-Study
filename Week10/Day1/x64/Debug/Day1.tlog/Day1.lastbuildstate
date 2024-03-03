@@ -1,2 +1,6 @@
 PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.39.33519:TargetPlatformVersion=10.0.22621.0:
+<<<<<<< HEAD
 Debug|x64|E:\C++\C-Study\Week10\|
+=======
+Debug|x64|G:\UnrealProject\2024-2\Week10\|
+>>>>>>> 157b1698894fee0cc17252b8f03df4c47be70cd1
