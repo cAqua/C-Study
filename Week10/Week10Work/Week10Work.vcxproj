@@ -127,11 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DoubleLink.cpp" />
     <ClCompile Include="Week10Work.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DoubleLink.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
