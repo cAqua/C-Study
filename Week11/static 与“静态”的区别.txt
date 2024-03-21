@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+//using namespace std;
+class FTestClass {
+public:
+	static int a ;//静态成员属性  不归对象所有
+	//静态成员属性，是全局只有一份，作用域伟类作用域。不归对象所有
+	int b = 5;
+
+
+	 static int GetA() { return a; }   //静态修饰符修饰的  这个叫静态的
+	 //像访问成员属性就不能加静态修饰符。因为不加static修饰的函数，是给对象使用的。
+	 //而加static修饰的函数是给类使用的。
+
+
+	 //非static修饰的函数是静态的  是给对象使用  
+	 void Say() { //在空指针的情况下  它可以执行不调用成员属性的代码
+		 std::cout << "asdfasdf"  << std::endl;
+	 }
+};
+int FTestClass::a = 0;
+
+//面向对象
+	//封装 抽离行为和属性的模板
+	//	封装属性（成员变量，普通成员变量和静态成员变量），和行为（函数：又分为静态成员函数 与 成员函数）
+	//	封装完了为了创建对象，对象是动态的，类是静态（他在静态代码区，方的就是一对字节码）。
+	// staitc 和 类是“静态”的中静态这个形容词的区别
+	//		staitc 静态修饰符 被他修饰了以后变成了静态成员
+	//		静态的 说的是这堆字节码是静态的  全局只有一份。
+	//继承
+	//多态
+
+int main() {
+	FTestClass tc;
+	FTestClass::a = 10;
+	FTestClass tc1;
+	FTestClass *tc3 = nullptr;
+	tc3->Say();
+	std::cout << sizeof(tc) << std::endl;
+	&FTestClass::Say; //成员函数的指针 
+	FTestClass::GetA;//静态成员函数的指针
+	return 0;
+}
+
